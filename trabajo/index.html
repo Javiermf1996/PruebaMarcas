@@ -1,9 +1,310 @@
-﻿<!doctype html>
-<html>
-	<head>
-		<title>Documento html</title>
-	</head>
-	<body>
-		<p>parrafo</p>
-	</body>
-</html>
+﻿<!DOCTYPE html>
+<html lang ="es">
+<head>
+	<title>Aprende HTML 5</title>
+	<meta charset="utf-8">
+	<meta name= "author"	content="Javier Ignacio Martínez Fuentes">
+</head>
+<body>
+	<h1>Aprende HTML 5</h1>
+	<br>
+	<a name="Índice"></a>
+	<h2>Índice</h2>
+	<b><ol>
+		<li> .........................................<a href="#Primeros pasos">Primeros pasos</a></li>
+		<br>
+		<li> .........................................<a href="#Artículos y párrafos">Artículos y Párrafos</a></li>
+		<br>
+		<li> .........................................<a href="#Listas">Listas</a></li>
+		<br>
+		<li> .........................................<a href="#Tipos de letra">Tipos de letra</a></li>
+		<br>
+		<li> .........................................<a href="#Tablas">Tablas</a></li>
+		<br>
+		<li> .........................................<a href="#URL">URL</a></li>
+		<br>
+		<li> .........................................<a href="#Notas">Notas</a></li>
+		<br></b>
+	<a name="Primeros pasos"></a>
+	<h2>1. Primeros pasos</h2>
+	<article>
+		
+		<section>
+		Para empezar nuestro documento HTML 5, tenemos que indicar que tipo de documento es,esto se indica con < !DOCTYPE html ><br>
+		seguido del lenguaje que vayamos a usar en nuestra página. < html lang= "es" > (Español)<br>
+		Para cerrar nuestras etiquetas utilizamos su mismo nombre con una barra, tal que así. < /html ><br>
+		</section>
+		<br>
+		<section>
+		Después debemos indicar el título que va a tener nuestro documento dentro de la cabecera.<br>
+		Para iniciar la cabecera < head > y sin cerrar la etiqueta, ponemos dentro nuestro título < title >< /title ><br>
+		también señalamos dos etiquetas más que contienen el código UNICODE de nuestra página < meta charset = "utf-8" ><br>
+		y el nombre del autor de la página < meta name = "author" content "Javier" > y ya tenemos una buena cabecera para poder empezar con el cuerpo del documento.<br>
+		<br>
+		</section>
+		<section> Con la etiqueta < body > abrimos el cuerpo del documento, aqui se pueden introducir diversas etiquetas según lo que quieras hacer<br>
+		Si queremos poner títulos a nuestros documentos basta con la etiqueta < h1 > Título </h1> dentro de nuestra etiqueta < body ><br>
+		el tamaño es configurable añadiendo +1 a nuestra etiqueta < h2 >< /h2 >,< h3 >< /h3 >...hasta 6 tamaños diferentes, siendo 1 el mayor y 6 el más pequeño.<br>
+		Un primer documento de prueba quedaría con la siguiente estructura.<br>
+		</section>
+		<br>
+		<section>
+			<pre>
+		<b><table border=1>
+												<tr>
+													<td>
+				< !DOCTYPE html >
+				< html lang=“es” >
+					< head >
+						< title >Primer documento HTML< /title >
+						< meta charset=“utf-8” >
+						< meta name=“author” content=“Javier” >
+					< /head > 
+					< body >
+						< h1 > Mi primer HTML < h1 >
+					< /body >
+					< /html >
+													</td>
+												</tr>
+			</table>											
+		</b>	</pre>
+		</section>
+		<br>
+	<article>
+	<a href="#Índice">Volver al Índice</a>
+	<a name="Artículos y párrafos"></a>
+	<h2>2. Artículos y Párrafos</h2>
+	<article>
+		<section>Los artículos cuentan con secciones donde puedes separar la información escrita en distintos bloques para que no se vea tan sobrecargado.<br>
+			El formato para crear un artículo es el siguiente:<br>
+			<br>
+		</section>
+		<section>
+			<pre><b>	<table border=1>
+										<tr>
+											<td>
+				< article >
+
+					< section >
+					< /section >
+					< section >
+					< /section >
+
+				< article >
+											</td>
+										</tr>
+					</table>
+			</b></pre>
+		</section><br>
+		<section>Existe la opción de crear diferentes párrafos para el manejo de la información, pueden crearse con < p > y al terminar < /p >
+		<p>Este texto esta en un párrafo y vamos a ver claramente la separación entre este parrafo y el siguiente.</p>
+		<p>Este texto esta en otro párrafo.</p>
+		<section> Los saltos de línea, espacios y tabulaciones también son configurables, con la etiqueta < br > hacemos un salto de línea tal y como hago (literalmente)<br>
+		a continuación.<br>
+			Pero también para las tabulaciones podemos poner una etiqueta de prediseño < pre > hasta que terminemos de tabular.
+			<pre><b><table border =1>
+					<tr>
+						<td>
+	Esto es un texto tabulado
+						</td>
+					</tr>
+				</table>
+			</b></pre><br>
+		</section>
+	<article>
+	<a href="#Índice">Volver al Índice</a>
+	<a name="Listas"></a>
+	<h2>3. Listas</h2>
+	<article>
+		<section>Las listas tienen mas opciones que los artículos, hay una variedad de listas y tienen distintos formatos, los elementos de una lista se señalan con < li ><br>
+			y pueden ser desordenadas < ul > , ordenadas < ol > o por definición en esta ultima las etiquetas varian, se escribe  < dl >, < dt > para los términos y < dd > para el significado.<br>
+		</section><br>
+		<section>
+			<pre><b><table border=1>
+											<tr>
+												<td>
+	< ul >					< ol >						< dl >
+		< li > 1 < /li >			< li > 1 < /li >				< dt >hola:
+		< li > 2 < /li >			< li > 2 < /li >					< dd > Forma de saludo. < /dd >
+		< li > 3 < /li >			< li > 3 < /li >				< /dt >
+	< /ul >					< /ol >						< /dl >
+												</td>
+											</tr>
+				</table>
+		
+			</b></pre>
+		</section><br>
+		<section>Asi quedaría en la web:
+			<pre><b><table border=1>
+				<tr>
+					<td>
+	Desordenada<br>
+			<ul>	<li> 1 </li>
+				<li> 2 </li>
+				<li> 3 </li>
+					</td>
+					<td>
+	</ul>	Ordenada<br>
+			<ol>	<li> primero </li>
+				<li> segundo </li>
+				<li> tercero </li>
+					</td>
+					<td>
+	</ol>	Definición<br>
+			<dl><dt>hola:
+					<dd>1.Forma de saludo.</dd>
+					
+				</dt>
+					</td>
+				</tr>
+				</table>	
+			</dl></pre></b>
+		</section>
+		<section>También pueden hacerse listas comenzando desde el final con la etiqueta < reverse >, puede comenzar la tabla ordenada por el numero que desees<br>
+		< start= "numero" > (esto en las tablas ordenadas) y por último se puede seleccionar con que carácter quieres que se ordene tu lista < type= "tipo" ><br>
+		tienes diferentes carácteres para elegir: 1,a,A,i,I.
+		</section>
+	<article>
+	<a href="#Índice">Volver al Índice</a>
+	<a name="Tipos de letra"></a>
+	<h2>4. Tipos de letra</h2>
+	<article>
+		<section> Los distintos tipos de letra son configurables en HTML:<br>
+			<pre><table border=1>
+							<tr>
+								<td>
+		<b>Esto es un ejemplo en letra negrita, utilizando la etiqueta < b > para iniciar y < /b > para cerrar.</b><br>
+		<i>Esto es un ejemplo en letra cursiva o bastardilla en español, se inicia con < i > y se cierra con < /i ></i><br>
+		<u>Esto es un ejemplo en letra subrayada, se inicia con < u > y se cierra con < /u ></u><br>
+		<s>Esto es un ejemplo en letra tachada, se inicia con < s > y se cierra con < /s ></s><br>
+		<em>Esto es un ejemplo en letra con enfasis, se inicia con < em > y se cierra con < /em ></em><br>
+		<strong>Esto es un ejemplo en letra importante, se inicia con < strong > y se cierra con < /strong ></strong>
+								</td>
+							</tr>
+				</table>
+			</pre>
+		
+		</section>
+	<article>
+	<a href="#Índice">Volver al Índice</a>
+	<a name="Tablas"></a>	
+	<h2>5. Tablas</h2>
+	<article>
+		<section>Con la etiqueta < table > crearemos una tabla, para ponerle bordes añadiremos a la etiqueta < table border=1 >, así obtendremos los bordes<br>
+			para las casillas tenemos dos etiquetas una son las columnas < tr > y otra las filas < td >.
+			<pre><b><table border=1>
+							<tr>
+										<td>
+			< table border=1 >
+				< tr >
+					< td >1< /td >
+					< td >2< /td >
+					< td >3< /td >
+				< /tr >
+				< tr >
+					< td >4< /td >
+					< td >5< /td >
+					< td >6< /td >
+				< /tr >
+				< tr >
+					< td >7< /td >
+					< td >8< /td >
+					< td >9< /td >
+				< /tr >
+			< /table >
+										</td>
+							</tr>
+				</table>
+			</b></pre>
+		En la web se vería así:
+		<br>
+	 		<table border=1>
+				<tr>
+					<td>1</td>
+					<td>2</td>
+					<td>3</td>
+				</tr>
+				<tr>
+					<td>4</td>
+					<td>5</td>
+					<td>6</td>
+				</tr>
+				<tr>
+					<td>7</td>
+					<td>8</td>
+					<td>9</td>
+				</tr>
+			</table>
+		<br>
+		Podemos hacer las casillas que queramos, incluso combinar casillas con enlaces o imágenes que veremos en el siguiente apartado<br>
+		</section>
+	<article>
+	<a href="#Índice">Volver al Índice</a>		
+	<a name="URL"></a>
+	<h2>6. URL</h2>
+	<article>
+		<section>Los Hiperenlaces pueden hacerse de dos tipos, apuntando hacia fuera del documento o dentro del mismo, para crear hiperenlaces apuntando hacia fuera del documento<br>
+			es necesaria la etiqueta < a href="">, para darle un nombre a nuestro enlace después ponemos el nombre de nuestro enlace acompañado de </a>, así quedaría el ejemplo.<br>
+			<pre><b><table border =1>
+									<tr>
+										<td>
+		< a href="dirección que queramos">Esto es un hiperenlace< /a > 
+										</td>
+									</tr>
+				</table>
+			</b></pre>
+			Para crear un enlace al mismo documento tenemos que crear dos etiquetas, una es donde vamos a ir < a name="Prueba" >< /a ><br>
+			y otra es desde donde vamos a ir< a href="#Prueba">Ir a Prueba< /a >, estos dos valores son llamados "Ancla" y "Enlace".
+			<pre><table border =1>
+									<tr>
+										<td>
+			Ancla:<b>
+			 < a name="Prueba" >< /a >
+			<br></b>
+			Enlace a Prueba:<b>
+			< a href="#Prueba">Ir a Prueba< /a >
+										</td>
+									</tr>
+				</table>
+			</b></pre>
+		</section>
+		<section>La creacion de imágenes es muy parecida a los hiperenlaces ya que los dos necesitan de una URL, para las imágenes la etiqueta < img src = "Mi imagen"><br>
+			también se puede editar el ancho y el largo de la imagen, asi como un comentario descriptivo de la foto.
+			<pre><b><table border =1>
+									<tr>
+										<td>
+			< img src = "URL_de_mi_imagen" >
+			< width = 200 >
+			< height = 150 >
+			< alt = "Esta es mi imagen"
+										</td>
+									</tr>
+				</table>						
+			</b></pre>
+		</section>
+		<section>Hay una gran variedad de formatos de imágenes, Bimap,JPG,GIF,PDF,etc..Incluso hacer que una imagen nos lleve a otra URL, tenemos distintas zonas<br>
+			donde colocar los enlaces, pero existen formas (círculo,cuadrado,triángulo) para poder poner muchos enlaces en una sola imagen según donde hagas "click" con el ratón.
+			<pre><b><table border =1>
+									<tr>
+										<td>
+		
+			< img usermap="#URL_de_mi_imagen" >
+			< map name = "Imagen" >
+			< area shape "circle" coords= "(40,35)","(15,25)">
+			
+										</td>
+									</tr>
+			</table>
+		</section></b></pre>
+	<article>
+	<a href="#Índice">Volver al Índice</a>
+	<a name="Notas"></a>
+	<h2>7. Notas</h2>
+	<article>
+		<section>Los textos que tienen preformato así, como todas las etiquetas visibles del documento van acompañadas de espacios entre carácteres para poder visualizarlas<br>
+		Cuando se escriba HTML no hay que poner espacios entre los carácteres "<" o ">" y el nombre de la etiqueta al que vamos a hacer referencia, esto ha sido mi manual sobre HTML 5<br>
+		</section>
+	<article>
+	<a href="#Índice">Volver al Índice</a>	
+		
+		
